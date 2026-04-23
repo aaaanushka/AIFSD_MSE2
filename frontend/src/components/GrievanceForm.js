@@ -12,7 +12,7 @@ function GrievanceForm({ refresh }) {
     const token = localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/api/grievances",
+      "https://aifsd-mse2-1-r9a9.onrender.com/api/grievances",
       form,
       { headers: { Authorization: token } }
     );

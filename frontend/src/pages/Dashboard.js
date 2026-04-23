@@ -14,7 +14,7 @@ function Dashboard() {
   // ================= FETCH =================
   const fetchData = async () => {
     const res = await axios.get(
-      "http://localhost:5000/api/grievances",
+      "https://aifsd-mse2-1-r9a9.onrender.com/api/grievances",
       { headers: { Authorization: token } }
     );
     setData(res.data);
@@ -23,7 +23,7 @@ function Dashboard() {
   // ================= SEARCH =================
   const searchData = async () => {
     const res = await axios.get(
-      `http://localhost:5000/api/grievances?search=${search}`,
+      `https://aifsd-mse2-1-r9a9.onrender.com/api/grievances?search=${search}`,
       { headers: { Authorization: token } }
     );
     setData(res.data);

@@ -5,7 +5,7 @@ export default function GrievanceList({ data, refresh }) {
 
   const deleteItem = async (id) => {
     await axios.delete(
-      `http://localhost:5000/api/grievances/${id}`,
+      `https://aifsd-mse2-1-r9a9.onrender.com/api/grievances/${id}`,
       { headers: { Authorization: token } }
     );
     refresh();

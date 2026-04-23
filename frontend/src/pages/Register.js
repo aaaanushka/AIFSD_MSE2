@@ -18,7 +18,7 @@ function Register() {
   const handleRegister = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://aifsd-mse2-1-r9a9.onrender.com/api/users/register",
         data
       );
 
